@@ -1,0 +1,23 @@
+<ion-view title="Review" id="page11">
+  <ion-content padding="true" class="has-header">
+    <div>
+      <img src="img/tUqH8MTMixlVufbSNd5w_z4ClJaISQz6m4DPvDbkX_1489913100_H_sign_hospital_hospital_sign_hospital__medical__road_sign.svg" style="display: block; width: 50%; height: 50%; margin-left: auto; margin-right: auto;">
+    </div>
+	
+	<div class="list">
+                <label class="item item-input">
+                    <span class="input-label">Message: </span>
+                    <input type="text" ng-model="newMessage">
+                </label>
+            </div>
+            <div>
+                <button class="button button-block" ng-click="save(newMessage)">
+                    Save
+                </button>
+                <button class="button button-block" ng-click="load()">
+                    Load
+                </button>
+                <p>{{ statusMessage }}</p>
+            </div>
+  </ion-content>
+</ion-view>
